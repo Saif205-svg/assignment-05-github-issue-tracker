@@ -30,9 +30,9 @@
 
     <section
         class="mt-[60px] bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)] p-[24px] max-w-[1300px] mx-auto rounded flex gap-[8px]">
-        <button class="w-[120px] btn btn-primary">All</button>
-        <button class="btn w-[120px] btn-outline">Open</button>
-        <button class="btn w-[120px] btn-outline">close</button>
+        <button id="allbtn" class="w-[120px] btn btn-primary">All</button>
+        <button id="openBtn" class="btn w-[120px] btn-outline">Open</button>
+        <button id="closeBtn" class="btn w-[120px] btn-outline">close</button>
     </section>
 
     <section
@@ -53,45 +53,10 @@
     </section>
 
     <!-- loaded data from api -->
-    <section class="mt-[25px] mx-auto max-w-[1300px] grid grid-cols-3 p-[27px] bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
-        <div class="p-[16px] max-w-[350px] space-y-6 bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
-            <h3 class="font-semibold text-xl">Fix Navigation Menu On Mobile Devices</h3>
-            <p class="text-[#64748B]">The navigation menu doesn't collapse properly on mobile devices</p>
-            <div class="mt-[12px] flex gap-[12px]">
-                <span class=" rounded-lg  p-[8px] text-[red] bg-[#feecec]">Bug</span>
-                <span class="px-[40px] rounded-lg p-[8px] text-[#91918e]  bg-[#fff6db]">Help Wanted</span>
-            </div>
-            <div>
-                <p class="text-[#64748B] text-[17px]"># by john_doe</p>
-                <p class="text-[#64748B] text-[17px]">1/15/2024</p>
-            </div>
-        </div>
-        <div class="p-[16px] max-w-[350px] space-y-6 bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
-            <h3 class="font-semibold text-xl">Fix Navigation Menu On Mobile Devices</h3>
-            <p class="text-[#64748B]">The navigation menu doesn't collapse properly on mobile devices</p>
-            <div class="mt-[12px] flex gap-[12px]">
-                <span class=" rounded-lg  p-[8px] text-[red] bg-[#feecec]">Bug</span>
-                <span class="px-[40px] rounded-lg p-[8px] text-[#91918e]  bg-[#fff6db]">Help Wanted</span>
-            </div>
-            <div>
-                <p class="text-[#64748B] text-[17px]"># by john_doe</p>
-                <p class="text-[#64748B] text-[17px]">1/15/2024</p>
-            </div>
-        </div>
-        <div class="p-[16px] max-w-[350px] space-y-6 bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
-            <h3 class="font-semibold text-xl">Fix Navigation Menu On Mobile Devices</h3>
-            <p class="text-[#64748B]">The navigation menu doesn't collapse properly on mobile devices</p>
-            <div class="mt-[12px] flex gap-[12px]">
-                <span class=" rounded-lg  p-[8px] text-[red] bg-[#feecec]">Bug</span>
-                <span class="px-[40px] rounded-lg p-[8px] text-[#91918e]  bg-[#fff6db]">Help Wanted</span>
-            </div>
-            <div>
-                <p class="text-[#64748B] text-[17px]"># by john_doe</p>
-                <p class="text-[#64748B] text-[17px]">1/15/2024</p>
-            </div>
-        </div>
-
+    <section id="cardContainer" class="mt-[25px] mx-auto max-w-[1300px] grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-[15px]   p-[27px] bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
+        
     </section>
 </body>
 
+<script src="script/issues.js"></script>
 </html>
