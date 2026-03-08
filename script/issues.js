@@ -93,7 +93,14 @@ function openModal(id) {
         document.getElementById('update_date').innerText = new Date(issuE.updatedAt).toLocaleDateString('en-GB');
         document.getElementById('modal_description').innerText = issuE.description;
         document.getElementById('modal_bug').innerText = issuE.labels[0];
-        document.getElementById('modal_help').innerText = issuE.labels[1];
+        const modalHelp = document.getElementById('modal_help');
+        if(issuE.labels[1]){
+            modalHelp.innerText = issuE.labels[1];
+            // modalHelp.parentElement.style.display = 'block';
+        }
+        else{
+            modalHelp.innerText = 'No issue found'
+        }
 
         const assigneeEl = document.getElementById('modal_assignee');
         if (issuE.assignee) {
