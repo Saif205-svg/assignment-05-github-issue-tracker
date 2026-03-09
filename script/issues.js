@@ -50,10 +50,10 @@ const displayIssues = (issues) => {
     issues.forEach((issue) => {
         const problem = document.createElement('div');
         problem.innerHTML = `
-        <div style="${getBorder(issue.status)}" onclick="openModal(${issue.id})" class="cursor-pointer p-[20px] sm:max-w-[350px] h-[100%] space-y-6 bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
+        <div style="${getBorder(issue.status)}" onclick="openModal(${issue.id})" class="cursor-pointer h-full p-[20px] sm:max-w-[350px]  space-y-6 bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
             <span style="${getPriorityColor(issue.priority)}"class="py-[15px] px-[25px] rounded-lg font-semibold">${issue.priority}</span>
             <h3 class="font-semibold text-xl mt-[25px]">${issue.title}</h3>
-            <p class="text-[#64748B] line-clamp-2">${issue.description}</p>
+            <p class="text-[#64748B] line-clamp-2 flex-1">${issue.description}</p>
             <div class="mt-[12px] flex gap-[12px] overflow-hidden">
                 <span style="font-size:12px" class="rounded-lg   px-[10px] h-fit py-[8px] text-[red] bg-[#feecec]">${issue.labels[0]}</span>
                 ${issue.labels[1] ? `<span style="font-size:12px" class="px-[10px] h-fit rounded-lg py-[8px] text-[#91918e] bg-[#fff6db]">${issue.labels[1]}</span>` : ''}
