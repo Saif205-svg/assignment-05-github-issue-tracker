@@ -50,7 +50,7 @@ const displayIssues = (issues) => {
     issues.forEach((issue) => {
         const problem = document.createElement('div');
         problem.innerHTML = `
-        <div style="${getBorder(issue.status)}" onclick="openModal(${issue.id})" class="cursor-pointer p-[20px] max-w-[350px] h-[100%] space-y-6 bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
+        <div style="${getBorder(issue.status)}" onclick="openModal(${issue.id})" class="cursor-pointer p-[20px] sm:max-w-[350px] h-[100%] space-y-6 bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
             <span style="${getPriorityColor(issue.priority)}"class="py-[15px] px-[25px] rounded-lg font-semibold">${issue.priority}</span>
             <h3 class="font-semibold text-xl mt-[25px]">${issue.title}</h3>
             <p class="text-[#64748B] line-clamp-2">${issue.description}</p>

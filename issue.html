@@ -16,14 +16,13 @@
 <body class="font-gheist">
     <!-- navbar -->
     <div class="navbar sticky top-0 flex justify-between mx-auto bg-base-100 shadow-sm">
-        <div class="sm:flex items-center sm:gap-[15px]">
+        <div class="sm:flex grow items-center sm:gap-[15px]">
             <img class="w-[36px]" src="assets/github-logo.png" alt="">
             <p class="font-semibold text-[17px]">GitHub Issues Tracker</p>
         </div>
-        <div class="flex gap-5">
-            
+        <div class="gap-[30px] flex flex-col sm:gap-[15px] sm:flex-row">
             <input id="input-search" type="search" placeholder="Search Issues.."
-                class="p-[10px] border-gray-300 rounded-sm w-[300px]">
+                class="p-[10px] border-gray-300 rounded-sm sm:w-[300px]">
             <button id="btn-search" class="btn btn-primary h-[44px] btn-new">Search Issues</button>
         </div>
 
@@ -32,7 +31,7 @@
     <!-- btn section -->
 
     <section
-        class="mt-[60px] bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)] p-[24px] max-w-[1300px] mx-auto rounded flex gap-[8px]">
+        class="mt-[60px] bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)] p-[24px] text-wrap max-w-[1300px] mx-auto rounded flex gap-[8px]">
         <button id="allbtn" class="w-[120px] btn button btn-primary">All</button>
         <button id="openBtn" class="btn w-[120px] button btn-outline">Open</button>
         <button id="closeBtn" class="btn w-[120px] button btn-outline">Closed</button>
@@ -57,7 +56,7 @@
 
     <!-- loaded data from api -->
     <section id="cardContainer"
-        class="mt-[25px] mx-auto items-start max-w-[1300px] grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-[25px]  p-[27px] bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
+        class="mt-[25px] mx-auto items-center sm:max-w-[1300px] grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-[25px]  p-[27px] bg-white shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
     </section>
     <div id="loadingSpinner" class="flex justify-center items-center h-[60vh] hidden">
         <span class="flex items-center loading loading-dots loading-xl"></span>
